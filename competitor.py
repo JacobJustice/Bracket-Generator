@@ -6,6 +6,7 @@ class Competitor:
     name = None
     seed = None
     bye = False
+    matched = False
     def __init__(self, name, seed):
         self.name = name
         self.seed = seed
@@ -14,8 +15,4 @@ class Competitor:
         return self.name + ": " + str(self.seed)
 
 
-x = Competitor("Guilt Trip", 5)
-y = Competitor("song 2", 3)
 
-print(x)
-print(y)
